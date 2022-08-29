@@ -1,0 +1,146 @@
+.footer {
+	background-color: $footer-bg;
+
+	.footer-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 80px $padding;
+
+		@include tablet-new {
+			justify-content: space-around;
+		}
+
+		@include tablet {
+			display: block;
+		}
+
+		.footer-links {
+			@include tablet {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			@include phone-sm {
+				grid-template-columns: 1fr;
+			}
+			li {
+				margin-bottom: 20px;
+				a {
+					color:#fff;
+					text-transform: uppercase;
+					font-family: 'Montserrat', sans-serif;
+					font-size: 14px;
+				}
+			}
+		}
+
+		.footer-logo {
+			@include tablet {
+				border-top: 1px solid #444;
+				margin-top: 30px;	
+			}
+			img {
+				@include tablet-m {
+					width: 80%;
+					height: auto;
+				}
+				@include tablet {
+					display: none;
+				}
+			}
+			.socialMedia {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				column-gap: 50px;
+				margin-top: 40px;
+
+				@include tablet {
+					justify-content: flex-start;
+					margin-bottom: 30px;
+					margin-top: 30px;
+
+				}
+				
+
+				a {
+					color:#fff;
+					font-size: 18px;
+
+				}
+			}
+		}
+
+		.newsletter {
+			text-align: right;
+			@include tablet-m {
+				text-align: left;
+				
+			}
+			@include tablet {
+				border-top: 1px solid #444;
+				padding-top: 30px;
+			}
+			h3 {
+				font-size: 18px;
+				color:$orange-btn;
+				letter-spacing: 6px;
+				text-transform: uppercase;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				margin-bottom: 20px;
+
+
+			}
+
+			.newsletter-content {
+				margin-bottom: 30px;
+				color: #fff;
+				max-width: 253px;
+				font-weight: 300;
+				@include tablet {
+					max-width: 768px;
+				}
+				
+				p {
+					font-family: 'Montserrat', sans-serif;
+					
+				}
+			}
+
+			form {
+				.form-control {
+					input {
+						outline: none;
+						border: 1px solid $newsletter;
+						padding: 10px $padding 10px $padding;
+						color: $newsletter;
+						background-color: transparent;
+						font-family: 'Montserrat', sans-serif;
+						font-weight: 300;
+						font-size: 17px;
+
+						@include tablet {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	.copyright {
+		padding: 26px $padding 26px $padding;
+		border-top: 1px solid $newsletter;
+		p {
+			color: #fff;
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+
+
+}

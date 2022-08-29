@@ -1,0 +1,122 @@
+.news-event-wrap {
+	padding: 120px 0px;
+
+	.news-list {
+		overflow: hidden;
+		//background-color: blue;
+		.news-item {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-top: none !important;
+			.img-news-frame {
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			.news-details-area {
+				padding: $padding;
+				margin-bottom: 30px;
+				color: #999;
+				h1 {
+					font-size: 23px;
+					font-family: 'Playfair Display', serif;
+					color: #222;
+					@include tablet {
+						font-size: 20px;
+					}
+				}
+				.whom {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					column-gap: $padding;
+					font-size: 15px;
+					margin-top: 10px;
+
+					@include tablet {
+						font-size: 14px;
+					}
+
+					.author-area {
+						color: #999;
+						span {
+							color: #222;
+						}
+					}
+					.date-posted {
+						span {
+							color:$orange-btn; 
+						}
+					}
+				}
+
+				p {
+					margin-top: 40px;
+					margin-bottom: 30px;
+					@include tablet {
+						font-size: 14px;
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+/* seperarate css */
+.news-btn {
+	color: #999;
+	padding: 10px 35px;
+	text-transform: capitalize;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 18px;
+	position: relative;
+	z-index: 99;
+	@include phone-sm {
+		padding: $padding;
+		display: block;
+		text-align: center;
+	}
+
+
+	/*&:hover {
+		background-color: $orange-btn;
+		color: #fff;
+		border: 1px solid $orange-btn;
+	}*/
+
+	&:hover {
+		color: $short-book;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		z-index: -1;
+		background-color: #e1e1e1;
+		transition: all 0.4s ease !important; 
+	}
+
+	&:hover::before {
+		width: 90%;
+		transition: all 0.4s ease !important;
+
+	}
+
+	&:hover i {
+		color: $short-book;
+	}
+
+	i {
+		margin-left: 10px;
+		color: #ccc;
+	}
+}

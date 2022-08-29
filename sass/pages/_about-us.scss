@@ -1,0 +1,179 @@
+.about-banner {
+	background: url(img/about-hero.jpg);
+	background-size: cover;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	width: 100% !important;
+	padding: 90px $padding;
+
+	.about-header {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		.about-items {
+			color: #fff;
+			font-size: 16px;
+			h1 {
+				font-family: 'Playfair Display', serif;
+				font-size: 28px;
+				color: #fff;
+				margin-bottom: 10px;
+			}
+			a {
+				font-family: 'Noto Sans', sans-serif;
+				font-size: 16px;
+				color: $orange-btn;
+			}
+		}
+	}
+}
+
+//about_us_area
+.about_us_area {
+	background-color: #fff;
+	padding: 94px $padding;
+
+	.about_contents {
+		color:$upper-address;
+		p {
+			margin-bottom: $padding;
+			text-align: justify;
+		}
+	}
+}
+
+//holiday button area
+.holiday {
+	background: url(img/holiday-bg.jpg);
+	background-size: cover;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	width: 100% !important;
+	//height: 498px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 135px $padding;
+
+	.holiday-content {
+		text-align: center;
+		color: #fff;
+
+		h1 {
+			font-family: 'Playfair Display', serif;
+			font-size: 57px;
+			margin-bottom: 57px;
+		}
+		img.playBtn {
+			cursor: pointer;
+			border-radius: 50%;
+			&:hover {
+				background-color: $footer-bg;
+
+			}
+		}
+		#yt {
+			display: none;
+		}
+		.iframe-container{
+		  position: relative;
+		  width: 100%;
+		  padding-bottom: 56.25%; 
+		  height: 0;
+		}
+		.iframe-container iframe{
+		  position: absolute;
+		  top:0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+	}
+}
+
+/***************************
+  SEPERATE CSS 
+****************************/
+
+.about_header {
+	text-align: center;
+	margin-bottom: 100px;
+	position: relative;
+
+	z-index: 80;
+	h1 {
+		text-transform: uppercase;
+		font-family: 'Playfair Display', serif;
+		color: $orange-btn;
+		font-weight: 700;
+		font-size: 45px;
+		position: relative;
+
+		&::selection {
+			color: $orange-btn;
+		}
+
+		@include phone-lg {
+			font-size: 35px;
+		}
+		@include phone-sm {
+			font-size: 30px;
+		}
+
+		span {
+			color: $best;
+			font-weight: 700;
+		}		
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-family: 'Playfair Display', serif;
+		color: $best;
+		font-weight: 400;
+		font-size: 35px;
+		position: relative;
+
+		@include phone-lg {
+			font-size: 26px;
+		}
+		@include phone-sm {
+			font-size: 21px;
+		}
+
+		span {
+			color: $best;
+			font-weight: 700;
+		}		
+	}
+
+	hr.hr-room {			
+	    display:block;
+	    border:0px;
+	    height: 15px;
+	    background-image: url(img/divider-about.png) !important;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    margin-top: 20px;		
+	}
+	hr.hr-services {
+			display:block;
+	    border:0px;
+	    height: 15px;
+	    background-image: url(img/divider-services.png) !important;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    margin-top: 20px;		
+	}
+	.paraHeader{
+		padding: 30px 0 20px 0;
+		max-width: 930px;
+		margin: auto;
+		color: $navbar;
+	}		
+}// end of room-header
+
+
+
+

@@ -1,0 +1,250 @@
+.reservation_hero {
+	background: url(img/reservation_bg.jpg);
+	background-size: cover;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	width: 100% !important;
+	padding: 94px $padding;
+	@include tablet-new {
+		padding: 70px $padding;
+	}
+
+	h1 {
+		font-size: 65px;
+		font-family: 'Playfair Display', serif;
+		color: $best;
+		text-transform: uppercase;
+		@include tablet-new {
+			font-size: 45px;
+		}
+		@include phone-medium {
+			font-size: 30px;
+		}
+	}
+}
+
+//reservation_wrap
+.reservation_wrap {
+	background-color: #fafafa;
+
+	.reserve-contents {
+		display: grid;
+		grid-template-columns: 1.2fr 2.2fr;
+		grid-gap: 50px;
+		padding: 100px $padding;
+
+		@include tablet-btw {
+			grid-gap: 20px;
+		}
+		@include tablet-new {
+			grid-template-columns: 1fr;
+		}
+
+		aside.booking_details {
+			background-color: #fff;
+			border: 1px solid #ebebeb;
+			padding: 30px 30px;
+			color: $upper-address;
+			height: 840px;
+			@include tablet-new {
+				height: 100%;	
+			}
+			h2.booking_h2 {
+				color: $orange-btn;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				font-size: 16px;
+			}
+			h1.selected_h1 {
+				font-family: 'Playfair Display', serif;
+				color: $best;
+				text-transform: capitalize;
+				margin: 30px 0;
+				font-size: 30px;
+			}
+			.selected_img {
+				
+				height: auto;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: auto;
+					@include tablet-new {
+						
+					}
+				}
+				
+			}
+			.selected_detail {
+				.room_price {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: $padding;
+
+					h2.roomHeader {
+						font-family: 'Playfair Display', serif;
+						text-transform: capitalize;
+						color: $upper-address;
+						font-size: 21px;
+					}
+					h2 {
+						color: $orange-btn;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 18px;
+						font-weight: 700;
+					}
+
+				}
+
+				p {
+					margin-top: 20px;
+					font-size: 14px;
+					font-family: 'Montserrat', sans-serif;
+				}
+				.check_info {
+					margin-top: $padding;
+					.checked_in_out {
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						align-items: center;
+						padding: $padding 0;
+						border-top: 1px solid #ebebeb;
+
+						h3 {
+							font-family: 'Montserrat', sans-serif;
+							font-size: 14px;
+							text-transform: uppercase;
+						}
+
+						p {
+							margin-top: 4px !important;
+						}
+					}
+					.total_price {
+						border-top: 1px solid #ebebeb;
+						padding: $padding 0;
+						h3 {
+							font-family: 'Montserrat', sans-serif;
+							font-size: 14px;
+							text-transform: uppercase;
+						}
+						h1 {
+							font-family: 'Montserrat', sans-serif;
+							font-size: 30px;
+							text-transform: uppercase;
+							color: $orange-btn;
+							font-weight: 600;
+
+						}
+					}
+				}
+			}
+
+		}
+
+		div.personal_info {
+			background-color: #fff;
+			border: 1px solid #ebebeb;
+			padding: 30px 30px;
+
+			h2 {
+				color: $orange-btn;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+			h1 {
+				font-family: 'Playfair Display', serif;
+				color: $best;
+				text-transform: capitalize;
+			}
+			p {
+				color: $upper-address;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				margin-top: 20px;
+			}
+
+			form {
+				margin-top: 50px;
+				section {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-gap: 30px;
+					@include tablet-m {
+						grid-gap: 20px;
+					}
+					@include phone-medium-s {
+						grid-template-columns: 1fr;
+					}
+
+					.select-control {
+						border: 1px solid #ccc;
+						width: 97%;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 14px;
+						padding: 11px $padding;
+						@include tablet-m {
+							width: 100%;
+						}
+					}				
+				}
+				.textArea1 {
+					margin-top: 15px;
+					padding-bottom: 30px;
+					color: $upper-address;
+					a {
+						color: $orange-btn;
+					}
+					.checkBox {
+						margin-bottom: 40px;
+					}
+					.checck {
+						margin-right: $padding;
+					}
+					a.book_now2 {
+						color:#333;
+						font-size: 14px;
+						text-transform: uppercase;
+						font-family: 'Montserrat', sans-serif;
+						margin-top: 30px;
+						border: 1px solid $orange-btn;
+						padding: 15px 30px;
+						@include phone-medium {
+							width: 100%;
+							padding: 15px 10px;
+							display: block;
+							text-align: center;
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}
+
+select {
+	padding: 10px;
+	padding-right: 30px;
+	outline: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url(img/arrow_down.png);
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	//background-size: .65em auto, 100%;
+}
+
+/* For IE (thanks to @SaiManoj) */
+select::-ms-expand {
+  display: none;
+}

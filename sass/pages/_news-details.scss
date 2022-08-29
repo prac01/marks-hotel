@@ -1,0 +1,191 @@
+//reservation_wrap
+.news_wrap {
+	background-color: #fafafa;
+
+	.news-contents {
+		display: grid;
+		grid-template-columns: 1.2fr 2.2fr;
+		grid-gap: 50px;
+		padding: 100px $padding;
+
+		@include tablet-btw {
+			grid-gap: 20px;
+		}
+		@include tablet-new {
+			grid-template-columns: 1fr;
+		}
+
+		aside.news_details_aside {
+			background-color: #fff;
+			border: 1px solid #ebebeb;
+			padding: 30px 30px;
+			color: $upper-address;
+			//height: 840px;
+			height: 100%;
+			@include tablet-new {
+				height: 100%;	
+				order: 2;
+			}
+			h2.booking_h2 {
+				color: $orange-btn;
+				text-transform: uppercase;
+				letter-spacing: 6px; 
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				font-size: 15px;
+				margin-bottom: 30px;
+			}
+			h1.selected_h1 {
+				font-family: 'Playfair Display', serif;
+				color: $best;
+				text-transform: capitalize;
+				margin: 30px 0;
+				font-size: 30px;
+			}
+			.blog_prev {
+				border-bottom: 1px solid #ccc;
+				height: auto;
+				overflow: hidden;
+				margin-bottom: 30px;
+				padding: $padding 0;
+				img {
+					width: 100%;
+					height: auto;
+					@include tablet-new {
+						
+					}
+				}
+
+				h3 {
+					font-family: 'Playfair Display', serif;
+					color: $best;
+					margin-top: $padding;
+					margin-bottom: $padding;
+				}
+
+				p {
+					font-size: 14px;
+					font-family: 'Montserrat', sans-serif;
+					color: $upper-address;
+				}
+				
+			}
+		}
+
+		div.blog_info {
+			background-color: #fff;
+			border: 1px solid #ebebeb;
+			padding: 30px 30px;
+
+			.img_frame3 {
+				width: 100%;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			h3 {
+				font-family: 'Playfair Display', serif;
+				font-style: italic;
+				color: $upper-address;
+				font-size: 16px;
+				text-transform: capitalize;
+				font-weight: 500;
+				text-align:center;
+				margin: $padding 0;
+			}
+
+			h2 {
+				color: $orange-btn;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				font-size: 16px;
+				margin-bottom: 30px;
+			}
+			h1.blog_h1 {
+				font-family: 'Montserrat', sans-serif;
+				color: #222;
+				text-transform: capitalize;
+				font-size: 24px;
+				font-weight: 500;
+				text-align: center;
+			}
+			p {
+				color: $upper-address;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				margin-top: 20px;
+			}
+
+			form {
+				margin-top: 50px;
+				section {
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-gap: 30px;
+					@include tablet-m {
+						grid-gap: 20px;
+					}
+					@include phone-medium-s {
+						grid-template-columns: 1fr;
+					}
+
+					.select-control {
+						border: 1px solid #ccc;
+						width: 97%;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 14px;
+						padding: 11px $padding;
+						@include tablet-m {
+							width: 100%;
+						}
+					}				
+				}
+				.textArea1 {
+					margin-top: 15px;
+					padding-bottom: 30px;
+					color: $upper-address;
+					a {
+						color: $orange-btn;
+					}
+					.checkBox {
+						margin-bottom: 40px;
+					}
+					.checck {
+						margin-right: $padding;
+					}
+					a.book_now2 {
+						color:#333;
+						font-size: 14px;
+						text-transform: uppercase;
+						font-family: 'Montserrat', sans-serif;
+						margin-top: 30px;
+						border: 1px solid $orange-btn;
+						padding: 15px 30px;
+						@include phone-medium {
+							width: 100%;
+							padding: 15px 10px;
+							display: block;
+							text-align: center;
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+}
+
+hr.hr-news {			
+    display:block;
+    border:0px;
+    height: 15px;
+    background-image: url(img/divider-about.png) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;		
+}

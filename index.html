@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marks Hotel</title>
+	
+
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+</head>
+<body>
+<div id="load">
+	<div class="load-content">
+	  <div class="cssload-container">
+	    <div class="cssload-circle"></div>
+	    <div class="cssload-circle"></div>
+	  </div>
+	</div>
+</div>
+
+	<header class="header">
+		<div class="wrapper border-btn"><!-- Start of Wrapper-->
+			<div class="topHeader container">
+				<div class="left">
+					<i class="fa-solid fa-location-dot"></i>
+					<p>1658 1st Avenue, Brooklyn City</p>
+				</div>
+				<div class="right">
+					<div class="social-media">
+						<a href=#><i class="fa-brands fa-twitter"></i></a>
+						<a href=#><i class="fa-brands fa-facebook-f"></i></a>
+						<a href=#><i class="fa-brands fa-instagram"></i></a>
+					</div>
+
+					<form>                   
+	                    <div class="form-control">
+	                    	<input type="text" name="s" id="s" class=" search-wp btn-block" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" value="Search" { this.value = 'Search'; this.style.color = '#ccc';} title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>"/>
+	                    	<a href="#" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
+	                    </div>
+	                </form> 
+				</div>
+			</div>
+
+		</div><!-- End of Wrapper-->
+
+		<nav class="nav-container">
+			<nav class="nav container">
+				<ul class="left-nav">
+					<li><a href=index.html>Home</a></li>
+					<li><a href=about-us.html>About us</a></li>
+					<li><a href=#rooms>Rooms</a></li>
+				</ul>
+				<div class="hidden-left">
+					<i class="fas fa-bars"></i>
+				</div>
+
+				<div class="logo"></div>
+
+				<ul class="right-nav">
+					<li><a href="reservations.html">reservations</a></li>
+					<li><a href="news.html">news</a></li>
+					<li><a href="#contact">contacts</a></li>
+				</ul>
+				<div class="hidden-right">
+					<i class="fa-solid fa-ellipsis-vertical"></i>
+				</div>
+			</nav>			
+		</nav>
+
+		<div class="hidden-menu">
+			<ul class="hidden-items">
+				<li><a href=index.html>Home</a></li>
+				<li><a href=about-us.html>About us</a></li>
+				<li><a href=#rooms>Rooms</a></li>
+				<li><a href="reservations.html">reservations</a></li>
+				<li><a href="news.html">news</a></li>
+				<li><a href="#contact">contacts</a></li>
+			</ul>
+		</div>
+	</header>
+<!--Start of Scroll Top Button-->
+    <button id="scrollTop" class="scrollTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <!--End of Scroll Top Button-->
+<div class="margin-top"></div>
+
+
+
+	<!-- Swiper -->
+	<div class="swiper mySwiper">
+	  <div class="swiper-wrapper">
+	    <div class="the_slide swiper-slide">
+	    	<div class="slide-content container">
+	    		<h1>Quality</h1>
+	    		<h1>Holidays With Us</h1>
+	    		<p>Phasellus non sapien nec justo ornare ultrices. Etiam cursus pretium mi, sit amet semper.</p>
+	    	</div>       	
+		</div>
+
+	    <div class="the_slide swiper-slide">
+	    	<div class="slide-content container">
+	    		<h2>Reserve a room to</h2>
+	    		<h1>Relax Yourself</h1>
+	    		<p>Mauris est justo, egestas at commodo vel, bibendum vitae ante in cursus ligula.</p>
+	    	</div> 
+		</div>
+
+		<div class="the_slide swiper-slide">
+	    	<div class="slide-content container">
+	    		<h2>Elegant Lobby</h2>
+	    		<h1>For Our Guests</h1>
+	    		<p class="slide-dark3">Mauris est justo, egestas at commodo vel, bibendum vitae ante in cursus ligula.</p>
+	    	</div> 
+		</div>
+
+		<div class="the_slide swiper-slide">
+	    	<div class="slide-content container">
+	    		<h2 class="slide-dark">Morbi lorem</h2>
+	    		<h1 class="slide-dark2">Integer finibus</h1>
+	    		<p>Phasellus non sapien nec justo ornare ultrices. Etiam cursus pretium mi, sit amet semper.</p>
+	    	</div>       	
+		</div>
+
+	  </div>
+	</div>
+	<!-- End of Swiper -->
+
+	<div class="container-full padding-sides">
+	<div class="quick-book-wrap">
+		<div class="quick-booking">
+			<form class="book-form">
+	            <div class="booking-content">
+	               	<section>
+	               		<div><label for="rating">Full Name</label></div>
+	                	<input type="text" name="s" id="s" class="" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" value="Your Name" { this.value = 'Search'; this.style.color = '#ccc';} />
+	                    
+	               	</section>
+
+	                <section>
+	                	<div><label for="rating">Email</label></div>
+	                	<input type="text" name="s" id="s" class="" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" value="Your Email" { this.value = 'Search'; this.style.color = '#ccc';} />
+	                </section>
+
+	                <section>
+	                	<div><label for="rating">Room Type</label></div>
+	                	<div class="select-custom">
+		                	<select class="select-control">                        
+	                            <option value="USA">Basic</option>
+	                            <option value="Turkey">Premium</option>
+	                            <option value="China">Deluxe</option>
+	                            <option value="Germany">Royalty</option>
+	                        </select>
+	                	</div>
+	                </section>
+
+	                <section>
+	                	<div><label for="rating">No. of Guest</label></div>
+	                	<div class="select-custom">
+		                	<select class="select-control">                        
+	                            <option>One (1)</option>
+	                            <option>Two (2)</option>
+	                            <option>Three (3)</option>
+	                            <option>Four (4)</option>
+	                            <option>Five (5)</option>
+	                            <option>Six (6)</option>
+	                        </select>
+	                	</div>	 
+	                </section>              	
+	            </div><!-- end of booking content -->
+
+	        	<div class="booking-btn">
+	            	<div>
+	            		<a href="#" class="book-now">Book Now!</a>
+	            		<div><a href="reservations.html" class="adv-booking-btn">Advanced booking</a></div>
+	            	</div>
+	            </div>
+	        </form>
+		</div>
+	</div>
+
+	</div>
+
+	<!-- Start of Content -->
+	<div class="papercut">
+		<div class="welcome container">
+			<div class="welcome-side">
+				<div class="welcome-logo">
+					<img src="img/welcome-logo.png">
+				</div>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<a href="#" class="learn-more">learn more</a>
+			</div>
+			<div class="welcome-img">
+				<img src="img/welcome-image.png">
+			</div>
+		</div>
+	</div>
+
+	<!-- Start of Our Rooms -->
+	<div class="our-rooms" id="rooms">
+		<div class="container">
+			<div class="room-header">
+				<h1>our <span>best rooms</span></h1>
+				<hr class="hr-room" />
+				<p class="paraHeader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+			</div>
+
+			<div class="rooms">
+				<div class="room-list">
+					<div class="room-details-section">
+						<h2 class="room-title">single room</h2>
+						<h3>$50 / night</h3>
+						<div class="room-specs">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<div class="view-room">
+								<a href="rooms/single-room.html">View Room</a>
+							</div>						
+						</div>
+					</div>
+					
+					<div class="dark"></div>
+					<img src="img/single-room.jpg">
+				</div>
+
+				<div class="room-list">
+					<div class="room-details-section">
+						<h2 class="room-title">double room</h2>
+						<h3>$130 / night</h3>
+						<div class="room-specs">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<div class="view-room">
+								<a href="rooms/double-room.html">View Room</a>
+							</div>						
+						</div>
+
+					</div>
+					<img src="img/double-room.jpg">
+				</div>
+
+				<div class="room-list">
+					<div class="room-details-section">
+						<h2 class="room-title">deluxe room</h2>
+						<h3>$100 / night</h3>
+						<div class="room-specs">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<div class="view-room">
+								<a href="rooms/deluxe-room.html">View Room</a>
+							</div>						
+						</div>
+					</div>
+					<img src="img/deluxe-room.jpg">
+				</div>
+
+				<div class="room-list">
+					<div class="room-details-section">
+						<h2 class="room-title">royal room</h2>
+						<h3>$200 / night</h3>
+						<div class="room-specs">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+							<div class="view-room">
+								<a href="rooms/royal-room.html">View Room</a>
+							</div>						
+						</div>
+					</div>
+					<img src="img/royal-room.jpg">
+				</div>
+			</div>
+
+			<center><a href="#" class="book-now">book now</a></center>
+		</div>
+	</div>
+	<!-- End of Our Rooms -->
+
+	<!-- Start of Counter -->
+	<div class="counterWrap fullwidth">
+		<div class="counter-list container">
+			<div class="counter-items" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+				<h1 class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='80' data-delay='10' data-increment="9">0</h1>
+				<h2>rooms</h2>
+			</div>
+			<div class="counter-items" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+				<h1 class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='570' data-delay='10' data-increment="9">0</h1>
+				<h2>events</h2>
+			</div>
+			<div class="counter-items" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+				<h1 class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='200' data-delay='10' data-increment="9">0</h1>
+				<h2>parking</h2>
+			</div>
+			<div class="counter-items" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+				<h1 class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='17' data-delay='10' data-increment="9">0</h1>
+				<h2>lifts</h2>
+			</div>
+		</div>
+	</div>
+	<!-- End of Counter -->
+
+	<!-- Start of Services -->
+	<div class="services papercut fullwidth">
+		<div class="container">
+			<div class="room-header">
+				<h1>our <span>services</span></h1>
+				<hr class="hr-services" />
+				<p class="paraHeader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+			</div>
+
+			<!-- PLACE TAB HERE -->
+			<div class="product_tab">
+				<section class="tab_head"><!-- Start of tab head -->
+					<div class="tab_toggle is-active">
+						<center class="wala">
+							<div class="tab-frame-img"><img src="img/restaurant.png"></div>			
+							<h3>Restaurant</h3>
+						</center>
+					</div>
+
+					<div class="tab_toggle">
+						<center>
+							<div class="tab-frame-img"><img src="img/fitness.png"></div>
+							<h3>Fitness Hall</h3>
+						</center>
+						
+					</div>
+
+					<div class="tab_toggle">
+						<center>
+							<div class="tab-frame-img"><img src="img/swimming-pool.png"></div>
+							<h3>Swimming Pool</h3>
+						</center>
+						
+					</div>
+
+					<div class="tab_toggle">
+						<center>
+							<div class="tab-frame-img"><img src="img/spa.png"></div>
+							<h3>Spa</h3>
+						</center>
+						
+					</div>				
+				</section><!-- End of tab head -->
+
+				<section class="tab_body"><!-- Start of tab_body -->
+					<section class="tab_content is-active"><!-- tab 1-->
+
+
+
+					<div class="description_tab">
+							<div class="tab-image">
+								<img src="img/restaurant-img.jpg">
+							</div>
+
+							<div class="tab-details">
+								<h2>Restaurant</h2>
+								<p>Curabitur mi libero, placerat vitae purus vitae, luctus tincidunt lorem. Praesent et sem ante. Mauris nec fermentum augue. Fusce congue ante sed nulla sollicitudin, vel bibendum orci condimentum. Nam commodo tempor varius. Praesent lacinia, ipsum non luctus ultricies, odio tellus posuere dolor, sed fermentum odio elit sed orci. Nam eget dui metus. Curabitur arcu sem, fringilla id felis at, lacinia feugiat nibh. Aliquam eget erat at dui iaculis vestibulum ut id orci.</p>
+
+								<p>Nulla sed turpis mauris. Donec ornare enim eget dui fringilla dapibus venenatis eu justo. Nam pellentesque finibus dolor, nec consequat ex egestas vel. In hac habitasse platea dictumst. Maecenas a dolor ultrices, mattis nisl in, fermentum neque.</p>
+							</div>
+						</div>
+					</section><!-- End of tab 1-->
+
+					<section class="tab_content"><!-- tab 2-->
+						<div class="description_tab">
+
+							<section class="tab-details">
+								<h2>Fitness Hall</h2>
+								<p>Morbi pharetra euismod leo nec molestie. Donec elementum nibh in lacus sodales sollicitudin. Cras dui nisi, malesuada luctus hendrerit vitae, fringilla ut purus. Quisque non tincidunt ex. Sed sapien felis, dignissim sed ultrices id, interdum eget sem. Quisque porta et ipsum nec porta. Mauris lectus tellus, ullamcorper a efficitur nec, dapibus ac nulla. Vivamus sed interdum elit, in laoreet eros. Duis lacinia leo vulputate urna lacinia pretium. Integer imperdiet pulvinar metus id dignissim. Integer arcu velit, consectetur eget mollis sit amet, volutpat blandit ante. Morbi id felis a risus placerat ornare. Vivamus laoreet velit in arcu blandit, vitae auctor velit condimentum. Nam blandit sem a egestas rutrum.</p>
+							</section>
+							<section class="tab-image">
+								<img src="img/fitness-gym.jpg">
+							</section>				
+						</div>
+					</section><!-- End of tab 2-->
+
+					<section class="tab_content"><!-- tab 3-->
+						<div class="description_tab">
+							<section class="tab-image">
+								<img src="img/swimming-pool.jpg">
+							</section>
+							<section class="tab-details">
+								<h2>Swimming Pool</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor viverra lacus quis aliquam. Vestibulum ornare semper ligula, in mollis nunc sagittis in. Fusce nec urna neque. Nulla facilisi. Aliquam congue sem non rhoncus euismod. Sed vel lacinia est, at pretium lacus. Donec ornare vestibulum mi. Mauris sodales, enim sed aliquam scelerisque, ante dolor tempus nisi, eu volutpat justo nulla vitae ligula. Suspendisse cursus nulla at arcu ullamcorper rhoncus.</p>
+
+								<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium posuere ex sed ornare. Proin ligula neque, sollicitudin ut nulla sit amet, dapibus congue quam.</p>
+							</section>
+						</div>
+					</section><!-- End of tab 3-->
+
+					<section class="tab_content"><!-- tab 4-->
+						<div class="description_tab">
+							<section class="tab-image">
+								<img src="img/spa-center.jpg">
+							</section>
+							<section class="tab-details">
+								<h2>Spa Center</h2>
+								<p>Morbi lorem felis, tincidunt nec iaculis faucibus, suscipit placerat risus. Curabitur maximus accumsan mattis. Ut non elit tortor. Pellentesque placerat hendrerit nulla, ut faucibus mauris. Aliquam ut mi laoreet, congue lorem vel, fermentum ligula. Sed tincidunt massa mi, at pellentesque purus viverra at. Aenean at aliquet neque, a porttitor sapien.</p>
+
+								<p> Donec elementum nibh in lacus sodales sollicitudin. Cras dui nisi, malesuada luctus hendrerit vitae, fringilla ut purus. Quisque non tincidunt ex. Sed sapien felis, dignissim sed ultrices id, interdum eget sem.</p>
+							</section>
+						</div>
+					</section><!-- End of tab 4-->
+				</section><!-- End of tab_body -->
+			</div><!-- End of product_tab -->
+		</div><!-- End of Container -->
+	</div><!-- End of Services -->
+
+<div class="gallery-wrap fullwidth">
+	<div class="container">
+		<div class="room-header">
+			<h1>our <span>gallery</span></h1>
+			<hr class="hr-room" />
+			<p class="paraHeader">Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat.</p>
+		</div>
+	</div><!-- end of container -->
+
+<!-- Swiper -->
+<div class="galleryWrapper">
+	<div class="gallery_section sliderGallery">
+		<ul class="gallery_ul swiper-wrapper">
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g1a.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g1a.jpg">
+					</a>
+				</div>				
+			</li>
+
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g2b.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g2b.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g4.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g4.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g7.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g7.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g2.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g2.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g8.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g8.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g1.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g1.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g9.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g9.jpg">
+					</a>
+				</div>				
+			</li>
+			<li class="gallery_list swiper-slide">				
+				<div class="img_frame">
+					<a href="img/g6.jpg" class="popimg">
+						<i class="fa-solid fa-magnifying-glass-plus" id="enlarge"></i>
+						<img src="img/g6.jpg">
+					</a>
+				</div>				
+			</li>					
+		</ul>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+	
+</div><!-- end of gallery-wrap -->
+
+
+<!-- Start of Testimonials -->
+<div class="testimonial_wrapper fullwidth">
+	<div class="container">
+		<div class="room-header">
+			<h1 class="orange-header">testimonials</h1>
+			<hr class="hr-room" />
+			<p class="paraHeader">Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat.</p>
+		</div>
+
+		<div class="testimonial-list"><!-- start of testimonial-list -->
+			<div class="swiper-wrapper">
+				<div class="testimonial-item swiper-slide">
+					<div class="img_frame_test">
+						<img src="img/testimonial-1.jpg">
+					</div>
+					<div class="test-details">
+						<h1>john smith</h1>
+						<h4>writer</h4>
+						<p>Curabitur mi libero, placerat vitae purus vitae, luctus tincidunt lorem. Praesent et sem ante. Mauris nec fermentum augue. Fusce congue ante sed nulla sollicitudin.</p>
+					</div>
+				</div>
+
+				<div class="testimonial-item swiper-slide">
+					<div class="img_frame_test">
+						<img src="img/testimonial-2.jpg">
+					</div>
+					<div class="test-details">
+						<h1>marie atkinson</h1>
+						<h4>photographer</h4>
+						<p>Praesent lacinia, ipsum non luctus ultricies, odio tellus posuere dolor, sed fermentum odio elit sed orci. Nam eget dui metus. Curabitur arcu sem, fringilla id felis at.</p>
+					</div>
+				</div>
+
+				<div class="testimonial-item swiper-slide">
+					<div class="img_frame_test">
+						<img src="img/testimonial-3.jpg">
+					</div>
+					<div class="test-details">
+						<h1>vivian saint</h1>
+						<h4>writer</h4>
+						<p>Curabitur mi libero, placerat vitae purus vitae, luctus tincidunt lorem. Praesent et sem ante. Mauris nec fermentum augue. Fusce congue ante sed nulla sollicitudin.</p>
+					</div>
+				</div>
+
+				<div class="testimonial-item swiper-slide">
+					<div class="img_frame_test">
+						<img src="img/testimonial-4.jpg">
+					</div>
+					<div class="test-details">
+						<h1>kim wexler</h1>
+						<h4>attorney</h4>
+						<p>Praesent lacinia, ipsum non luctus ultricies, odio tellus posuere dolor, sed fermentum odio elit sed orci. Nam eget dui metus. Curabitur arcu sem, fringilla id felis at.</p>
+					</div>
+				</div>
+
+				<div class="testimonial-item swiper-slide">
+					<div class="img_frame_test">
+						<img src="img/testimonial-5.jpg">
+					</div>
+					<div class="test-details">
+						<h1>grace paul</h1>
+						<h4>vlogger</h4>
+						<p>Curabitur mi libero, placerat vitae purus vitae, luctus tincidunt lorem. Praesent et sem ante. Mauris nec fermentum augue. Fusce congue ante sed nulla sollicitudin.</p>
+					</div>
+				</div>
+
+				<div class="testimonial-item swiper-slide">
+					<div class="img_frame_test">
+						<img src="img/testimonial-6.jpg">
+					</div>
+					<div class="test-details">
+						<h1>irene hawkins</h1>
+						<h4>attorney</h4>
+						<p>Praesent lacinia, ipsum non luctus ultricies, odio tellus posuere dolor, sed fermentum odio elit sed orci. Nam eget dui metus. Curabitur arcu sem, fringilla id felis at.</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div><!-- end of testimonial-list -->
+
+	</div><!-- end of container -->
+</div>
+<!-- End of Testimonials -->
+
+<!-- Start of News & Events -->
+<div class="news-event-wrap papercut fullwidth">
+	<div class="container">
+		<div class="room-header">
+			<h1>latest <span>news</span></h1>
+			<hr class="hr-room" />
+			<p class="paraHeader">Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis.</p>
+		</div>
+
+		<div class="news-list"><!-- start of news-list -->
+			<div class="swiper-wrapper">
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-0.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Morbi pharetra</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-2b.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Mauris nec fermentum</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-3.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Curabitur mi libero</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-4.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Donec ornare</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-2.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Curabitur mi libero</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-5.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Integer finibus</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+				<div class="news-item swiper-slide">
+					<div class="img-news-frame">
+						<a href="" class="popimg2"><img src="img/news-6.jpg"></a>
+					</div>
+					<div class="news-details-area">
+						<h1>Aenean tristique</h1>
+						<div class="whom">
+							<div class="author-area">by <span>Admin</span></div>
+							<div class="date-posted">posted: <span>August 10 2022</span></div>
+						</div>
+						<p>Fusce ac auctor lacus. Curabitur tincidunt imperdiet turpis. Integer finibus augue et diam dapibus tincidunt. Aenean tristique et felis sed placerat. Ut sit amet congue lacus. Praesent pretium </p>
+
+						<a href="#" class="news-btn">Read More <i class="fas fa-book-reader"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div><!-- end of news-list -->
+
+	</div><!-- end of container -->
+</div>
+<!-- End of News & Events -->
+
+<!-- Start of Contact Us -->
+<div class="contact-us fullwidth" id="contact">
+	<div class="container">
+		<div class="room-header">
+			<h1>contact <span>us</span></h1>
+			<hr class="hr-room" />
+		</div>
+	</div><!-- end of container -->
+	<div class="googleMap fullwidth">
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12106.041105155422!2d-74.00768993203616!3d40.662724435089956!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa528d100fead81a1!2sLiberty%20View%20Brooklyn%20Hotel!5e0!3m2!1sen!2sph!4v1660610136075!5m2!1sen!2sph" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+
+	<div class="contact-area container">
+		<div class="get-in-touch">
+			<h1>get in touch</h1>
+			<form>
+				<input type="text" name="s" id="s" class="form_control" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" value="Enter your name" { this.value = 'Enter your name'; this.style.color = '#ccc';} />
+
+				<input type="text" name="s" id="s" class="form_control" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" value="Enter your email" { this.value = 'Enter your email'; this.style.color = '#ccc';} />
+
+				<textarea class="form_control" cols="1" placeholder="Enter your message"></textarea>
+
+				<div class="send-message">
+					<button>send message</button> 
+				</div>
+
+			</form>
+		</div>
+		<div class="information">
+			<center><h1>information</h1></center>
+			<section class="infoDetails">
+				<div class="infoAdd">
+					<div class="info-icon"><img src="img/map.png"></div>
+					<div class="infoAddDetail">
+						<h1>address</h1>
+						<p>1657 1st Avenue, Brooklyn City</p>
+					</div>
+				</div>
+
+				<div class="infoAdd">
+					<div class="info-icon"><img src="img/phone.png"></div>
+					<div class="infoAddDetail">
+						<h1>phone / fax</h1>
+						<p>+98 445 321 561 / +54 987 213 8474</p>
+					</div>
+				</div>
+
+				<div class="infoAdd">
+					<div class="info-icon"><img src="img/envelope.png"></div>
+					<div class="infoAddDetail">
+						<h1>email</h1>
+						<p>admin@markshotel.com</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<!-- End of Contact Us -->
+
+
+
+
+<!-- End of Content -->
+
+<!-- Start of Footer -->
+	<footer class="footer fullwidth">
+		<div class="footer-content container">
+			<ul class="footer-links">
+				<li><a href="#">about us</a></li>
+				<li><a href="#">support</a></li>
+				<li><a href="#">privacy policy</a></li>
+				<li><a href="#">terms & conditions</a></li>
+			</ul>
+
+			<div class="footer-logo">
+				<center><img src="img/logo-footer.png"></center>
+				
+				<div class="socialMedia">
+					<a href=#><i class="fa-brands fa-twitter"></i></a>
+					<a href=#><i class="fa-brands fa-facebook-f"></i></a>
+					<a href=#><i class="fa-brands fa-instagram"></i></a>
+				</div>
+				
+			</div>
+
+			<div class="newsletter">
+				<h3>newsletter</h3>
+				<div class="newsletter-content">
+					<p>Subscribe to our news letter to receive updates and news.</p>
+					
+				</div>
+
+				<form>
+					<div class="form-control">
+                    	<input type="text" name="s" id="s" class=" search-wp btn-block" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" value="Email Address" { this.value = 'Search'; this.style.color = '#ccc';} title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>"/>                  	
+                    </div>
+				</form>
+			</div>
+		</div>
+		<div class="copyright container">
+			<p>© 2022 Marks Hotel. All rights reserved.</p>
+		</div>
+	</footer>
+	<!-- End of Footer -->
+
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<!-- Link Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- End of Link Swiper's JS -->
+
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+	
+
+</body>
+</html>

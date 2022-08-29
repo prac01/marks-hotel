@@ -1,0 +1,53 @@
+.error_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url(img/error_bg.jpg);
+	background-size: cover;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	width: 100% !important;
+	@include hphone {
+		height: 100%;
+		padding: 30px 0;
+
+	}
+
+	.error-content {
+		text-align: center;
+		h1.error_h1 {
+			font-size: 260px;
+			color: $best;
+			text-shadow: -6px 2px 2px rgba(100,100,100,0.6);
+			@include tablet-new {
+				font-size: 200px;
+			}
+			@include phone {
+				font-size: 160px;
+			}
+			@include phone-sm {
+				font-size: 100px;
+			}		
+		}
+		h3 {
+			font-family: 'Playfair Display', serif;
+			color:$upper-address;
+			font-size: 30px;
+			margin-bottom: $padding;
+			@include phone {
+				font-size: 23px;
+			}
+		}
+		h4 {
+			color:$upper-address;
+			a {
+				color: $orange-btn;
+				text-decoration: underline;
+				&:hover {
+					color: $best;
+				}
+			}
+		}
+	}	
+}

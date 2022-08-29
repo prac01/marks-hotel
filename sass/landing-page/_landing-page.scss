@@ -1,0 +1,78 @@
+/* Billboard */
+@import "billboard";
+
+/* Quick Booking */
+@import "quick-booking";
+
+/* Welcome */
+@import "welcome";
+
+/* Our-rooms */
+@import "our-rooms";
+
+/* Counter */
+@import "counter";
+
+/* Services */
+@import "services";
+
+/* Gallery */
+@import "gallery";
+
+/* Testimonials */
+@import "testimonials";
+
+/* News-events */
+@import "news-events";
+
+/* Contact-us */
+@import "contact-us"; 
+
+
+
+/******************************************
+ 	SEPERATE CSS 
+******************************************/
+
+.dummy {
+	background-color: $room-dark;
+	width: 100%;
+	padding: 80px 0px;
+}
+
+.papercut {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	&:before {
+		position: absolute;
+	  	content: "";
+	  	background: url("img/papercut.png");
+	  	bottom: -54px;
+	  	left: 0px;
+	  	height: 54px;
+	  	width: 100%;
+	  	overflow: hidden;
+	  	display: inline-block;
+	  	z-index: 200;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

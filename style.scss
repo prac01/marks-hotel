@@ -1,0 +1,69 @@
+/*
+Theme Name: Marks Hotel
+
+Author: Raygie Mark Tajora
+
+Description: Hotel Website Training
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.7
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Variables
+# Header
+# Contents
+	## Landing-Page
+		### Grid-Billboard
+		### Ads
+		### Newest-Product
+		### Best Seller
+		### News & Events 
+	## About
+	## Products
+		### Woocommerce Style
+	## News
+	## Contact-Us
+# Footer
+
+*/
+
+/* Variables */
+@import "sass/variables";
+
+/* Mixin */
+@import "sass/mixin";
+
+
+/* Normalize */
+@import "sass/normalize";
+
+/* Loader*/
+@import "sass/loader";
+
+/* Header */
+@import "sass/header";
+
+/* Landing page */
+@import "sass/landing-page/landing-page";
+
+/* Pages */
+@import "sass/pages/pages";
+
+/* Footer */
+@import "sass/footer";
+
+
+/*
+task:
+
+
+*/
+
+
+
+

@@ -1,0 +1,309 @@
+.our-rooms {
+	background-color: $room-dark;
+	width: 100%;
+	padding: 150px $padding;
+
+	.rooms {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+		margin-bottom: 160px;
+
+		@include tablet {		
+			display: block;
+		}
+
+		.room-list {
+			position: relative;
+			overflow: hidden;
+			max-width: 570px;
+			height: auto;
+			margin: 0 auto;
+			background: rgba(0,0,0, 0.80);
+			transition: all 0.6s ease !important;
+
+			&::before {
+				width: 570px;
+				height: 408px;
+				background: rgba(0, 0, 0, 0);
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+
+			@include tablet {
+				margin-bottom: 20px;
+			}
+
+			.room-details-section {
+				color: #fff;
+				padding: $padding;
+				position: absolute;
+				top: 280px;
+				left: 0;
+				z-index: 99;
+				transition: all 0.6s ease !important;
+				width: 100%;
+
+				@include desktop-low {
+					top: 260px;
+				}
+				@include tablet-lg {
+					top: 200px;
+				}
+				@include tablet-btw {
+					top: 170px;
+				}
+				@include tablet-m {
+					top: 160px;
+				}
+				@include tablet-new {
+					top: 120px;
+				}
+				@include tablet {
+					top: 280px;
+				}
+				@include phone-lg {
+					top: 240px;
+				}
+				@include phone {
+					top: 170px;
+				}
+				@include phone-medium {
+					top: 130px;
+				}
+				@include phone-medium-s {
+					top: 100px;
+				}
+				@include phone-sm {
+					top: 0px;
+				}
+				@include phone-sm2 {
+					top: 20px;
+				}
+
+
+				h2 {
+					font-family: 'Playfair Display', serif;
+					border-bottom: 1px solid $orange-btn;
+					padding: 10px 0;
+					text-transform: uppercase;
+					font-weight: 500;
+					font-size: 21px;
+				}
+				h3 {
+					font-family: 'Playfair Display', serif;
+					padding: 10px 0;
+					font-weight: 500;
+				}
+
+				.room-specs {
+					position: relative;
+					font-family: 'Noto Sans', sans-serif;
+					color: #f1f1f1;
+					padding: $padding 0 $padding 0;
+					overflow: hidden;
+					@include tablet-btw {
+						margin-top: 70px;
+					}
+					@include tablet-m {
+						margin-top: 0px;
+					}
+
+					p {
+						margin-bottom: 45px;
+						font-weight:300;
+						font-size: 14px;
+						text-overflow: ellipsis;
+						@include tablet-lg {
+							margin-top: 30px;
+						}
+						@include tablet-btw {
+							display: none;
+						}
+						@include tablet-m {
+							
+						}
+						@include tablet {
+							display: block;
+						}
+						@include phone-lg {
+							margin-top:33px;
+						}
+						@include phone {
+							display: none;
+						}
+						@include phone-sm {
+							margin-top: 10px;
+						}
+					}
+
+					.view-room {
+						text-align: right;
+							
+							@include tablet-m {
+								margin-top: 50px;
+							}
+							@include phone-medium-s {
+								margin-top: 30px;
+								max-width: 360px;
+								text-align: left;
+							}
+							@include phone-sm {
+								margin-top: 0px;
+							}
+							@include phone-sm2 {
+								margin-top: 70px;
+							}
+							@include phone-xsm {
+								margin-top: 40px;
+							}
+
+						a {
+							padding: 10px 32px;
+							background-color: transparent;
+							border: 2px solid $orange-btn;
+							color: #fff;
+							&:hover {
+								background-color: $orange-btn;
+							}
+							@include phone-medium-s {
+								width: 100%;
+								display: block;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				transform: scale(1.1);
+
+			}
+		}
+
+		.room-list:hover .room-details-section {
+			top: 0px;
+			@include phone-sm2 {
+				top: -100px;
+			}
+		} 
+		.room-list:hover::before {
+			background: rgba(0, 0, 0, 0.60);
+		} 
+		.room-list:hover img {
+			transform: scale(1);
+			filter: blur(5px);
+	
+		}
+	}
+
+	a.book-now {
+		text-transform: uppercase;
+		font-family: 'Noto Sans', sans-serif;
+		font-size: 18px;
+		text-align: center;
+		padding: $padding 60px;
+		border: 2px solid #ccc;
+		color: $orange-btn;
+		position: relative;
+		z-index: 99;
+
+		&:hover {
+			color: $short-book;
+		}
+
+		&::before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 0%;
+				z-index: -1;
+				background-color: #e1e1e1;
+				transition: all 0.4s ease !important; 
+			}
+
+			&:hover::before {
+				height: 100%;
+				transition: all 0.4s ease !important;
+
+			}
+		
+
+		@include phone-medium-s {
+			padding: $padding;
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+
+	}
+
+}// end of our rooms
+
+/***************************
+  SEPERATE CSS 
+****************************/
+
+.room-header {
+	text-align: center;
+	margin-bottom: 100px;
+	position: relative;
+
+	z-index: 80;
+	h1 {
+		text-transform: uppercase;
+		font-family: 'Playfair Display', serif;
+		color: $our;
+		font-weight: 400;
+		font-size: 45px;
+		position: relative;
+
+		@include phone-lg {
+			font-size: 35px;
+		}
+		@include phone-sm {
+			font-size: 30px;
+		}
+
+		span {
+			color: $best;
+			font-weight: 700;
+		}		
+	}
+
+	hr.hr-room {			
+	    display:block;
+	    border:0px;
+	    height: 15px;
+	    background-image: url(img/divider-about.png) !important;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    margin-top: 20px;		
+	}
+	hr.hr-services {
+			display:block;
+	    border:0px;
+	    height: 15px;
+	    background-image: url(img/divider-services.png) !important;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    margin-top: 20px;		
+	}
+	.paraHeader{
+		padding: 30px 0 20px 0;
+		max-width: 930px;
+		margin: auto;
+		color: $navbar;
+	}		
+}// end of room-header

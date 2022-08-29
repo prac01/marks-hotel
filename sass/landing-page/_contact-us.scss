@@ -1,0 +1,162 @@
+.contact-us {
+	padding: 150px 0px 100px 0;
+	background-color: $room-dark;
+
+	.googleMap {
+		#map {
+			
+		}
+	}
+
+	.contact-area {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+		margin-top: 50px;
+
+		@include tablet-lg {
+			grid-gap: 30px;
+		}
+		@include tablet-new {
+			grid-template-columns: 1fr;
+		}
+
+		.get-in-touch {
+			padding: 32px;
+			background-color: #fff;
+			box-shadow: 0px 14px 42px -16px rgba(0,0,0,0.20);
+			-webkit-box-shadow: 0px 14px 42px -16px rgba(0,0,0,0.20);
+			-moz-box-shadow: 0px 14px 42px -16px rgba(0,0,0,0.20);
+			
+
+			h1 {
+				font-size: 18px;
+				color:$orange-btn;
+				font-weight: 300;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-family: 'Montserrat', sans-serif;
+				margin-bottom: 20px;
+			}
+			
+		}
+
+		.information {
+			padding: 32px;
+			background-color: #fff;
+			box-shadow: 0px 14px 42px -16px rgba(0,0,0,0.20);
+			-webkit-box-shadow: 0px 14px 42px -16px rgba(0,0,0,0.20);
+			-moz-box-shadow: 0px 14px 42px -16px rgba(0,0,0,0.20);
+
+
+			h1 {
+				font-size: 18px;
+				color:$orange-btn;
+				font-weight: 300;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-family: 'Montserrat', sans-serif;
+				margin-bottom: 20px;
+
+			}
+
+			.infoDetails {
+				margin-top: 40px;
+				.infoAdd {
+					display: flex;
+					justify-content: flex-start;
+					column-gap: 50px;
+					align-items: center;
+					margin-bottom: 50px;
+					@include phone-medium-s {
+						column-gap: 26px;
+					}
+					@include phone-sm {
+						display: block;
+					}
+					.info-icon {
+						@include phone-sm {
+							display: none;
+						}
+					}
+					.infoAddDetail {
+						h1 {
+							font-family: 'Montserrat', sans-serif;
+							font-weight: 700;
+							font-size: 20px;
+							color: $navbar;
+							margin-bottom: 6px !important;
+							@include phone-sm {
+								font-size: 18px;
+							}
+						}
+						p {
+							color: $navbar;
+							font-family: 'Open Sans', sans-serif;
+							font-size: 15px;
+							font-weight: 400;
+							@include phone-sm {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+
+}
+
+
+/* seperate css*/
+textarea.form_control {
+	width: 100%;
+	height: 150px;
+	resize: vertical;
+	margin-top: 20px;
+	//background-color: var(--color-formBg);
+	padding: 10px 15px;
+	//color: var(--color-form-text);
+	outline: 0;
+	border: 1px solid #ccc;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+input.form_control {
+	width: 100%;
+	margin-top: 20px;
+	//background-color: var(--color-formBg);
+	padding: 10px 15px;
+	//color: var(--color-form-text);
+	color: $navbar;
+	outline: 0;
+	border: 1px solid #ccc;
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.send-message {
+	button {
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		border: 1px solid $orange-btn;
+		letter-spacing: 2px;
+		padding: $padding 30px;
+		background-color: transparent;
+		color: $navbar;
+		outline: none;
+		font-size: 14px;
+		margin-top: 30px;
+		margin-bottom: $padding;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $orange-btn;
+			color: #fff;
+		}
+	}
+}

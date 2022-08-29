@@ -1,0 +1,229 @@
+//room details
+.room_wrap {
+	background-color: #fafafa;
+
+	.room-contents {
+		display: grid;
+		grid-template-columns: 1.2fr 2.2fr;
+		grid-gap: 50px;
+		padding: 100px $padding;
+
+		@include tablet-btw {
+			grid-gap: 20px;
+		}
+		@include tablet-new {
+			grid-template-columns: 1fr;
+		}
+
+		aside.room_details_aside {
+			//background-color: #fff;
+			//border: 1px solid #ebebeb;
+			
+			//height: 840px;
+			//height: 100%;
+			@include tablet-new {
+				height: 100%;	
+				order: 2;
+			}
+			h2.booking_h2 {
+				color: $orange-btn;
+				text-transform: uppercase;
+				letter-spacing: 6px; 
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				font-size: 15px;
+				margin-bottom: 30px;
+			}
+			h1.selected_h1 {
+				font-family: 'Playfair Display', serif;
+				color: $best;
+				text-transform: capitalize;
+				margin: 30px 0;
+				font-size: 30px;
+			}
+			
+			.room_features {
+				background-color: #fff;
+				border: 1px solid #ebebeb;
+				padding: 30px 30px;
+				color: $upper-address;
+
+				.featureList {
+
+					.featureItem {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						gap: 27px;
+						margin-bottom: 30px;
+
+						div.imgFrame4	{
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							img {
+
+							}
+						}
+						div.featureItemName {
+							display: flex;
+							justify-content: flex-start;
+							align-items: center;
+							
+							h3 {
+								color: $navbar;
+								text-transform: uppercase;								
+								font-family: 'Montserrat', sans-serif;
+								font-weight: 400;
+								font-size: 15px;
+							}
+						}
+					}
+				}
+
+			}
+
+			.similar_rooms {
+				background-color: #fff;
+				border: 1px solid #ebebeb;
+				padding: 30px 30px;
+				color: $upper-address;
+				margin-top: 50px;
+
+				.similar-room-list {
+					.similar_items {
+						margin-bottom: 30px;
+						img {
+							width: 100%;
+							height: auto;
+						}
+						.similar_room_name {
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							margin-top: 10px;
+							h2 {
+								font-family: 'Playfair Display', serif;
+								font-size: 20px;
+								text-transform: capitalize;
+								font-weight: 700;
+							}
+							h3 {
+								font-family: 'Montserrat', sans-serif;
+								color: $orange-btn;
+							}
+						}
+					}
+				}
+			}
+		}
+//
+		div.room_info {
+			background-color: #fff;
+			border: 1px solid #ebebeb;
+			padding: 30px 30px;
+
+			.img_frame_room {
+				width: 100%;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.room_title_main {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-top: 1px solid $orange-btn;
+				border-bottom: 1px solid $orange-btn;
+				padding: $padding 0;
+				margin-top: 30px;
+				margin-bottom: 30px;
+				@include phone-sm2 {
+					display: block;
+				}
+
+				h1 {
+					font-family: 'Playfair Display', serif;
+					text-transform: capitalize;
+					font-size: 24px;
+					color: $best;
+					@include phone-medium {
+						font-size: 20px;
+					}
+					@include phone-sm2 {
+						margin-bottom: 8px;
+					}
+				}
+				.price_tagg {
+					font-family: 'Montserrat', sans-serif;
+					color:$orange-btn;
+					font-size: 22px;
+					font-weight: 700;
+					@include phone-medium {
+						font-size: 18px;
+					}
+					span {
+						font-size: 16px;
+						font-weight: 500;
+					}
+				}
+			}
+
+			h2 {
+				color: $orange-btn;
+				text-transform: uppercase;
+				letter-spacing: 4px; 
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				font-size: 15px;
+				
+			}
+
+			p {
+				color: $upper-address;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.room_slider {
+	overflow: hidden !important;
+	
+	.roomWrap {
+		overflow: hidden !important;
+		position: relative;
+		.the_slide1 {
+			box-sizing: border-box !important;
+			  text-align: center;
+			  font-size: 18px;
+			  background: #fff;
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  background-position: center center !important;
+			  background-repeat: no-repeat !important;
+			  width: 100% !important;
+
+			
+			img {
+				width: 100% !important;
+				height: auto;
+			}
+		
+		}
+	}
+	
+	.swiper-pagination {
+	  position: relative;
+	  margin-top: 40px !important;
+
+	}
+
+
+	
+}

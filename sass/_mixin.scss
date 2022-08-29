@@ -1,0 +1,104 @@
+/* Media Screens */
+
+@mixin desktop-low {
+    @media only screen and (max-width: #{$desktop-low}) {
+        @content;
+    }
+}
+
+@mixin tablet-btw {
+    @media only screen and (max-width: #{$tablet-btw}) {
+        @content;
+    }
+}
+
+@mixin tablet-lg {
+    @media only screen and (max-width: #{$tablet-lg}) {
+        @content;
+    }
+}
+
+@mixin tablet-m {
+    @media only screen and (max-width: #{$tablet-m}) {
+        @content;
+    }
+}
+
+@mixin tablet-new {
+    @media only screen and (max-width: #{$tablet-new}) {
+        @content;
+    }
+}
+
+@mixin tablet-tab {
+    @media only screen and (max-width: #{$tablet-tab}) {
+        @content;
+    }
+}
+
+
+@mixin tablet {
+    @media only screen and (max-width: #{$tablet}) {
+        @content;
+    }
+} 
+
+@mixin phone-lg {
+    @media only screen and (max-width: #{$phone-lg}) {
+        @content;
+    }
+} 
+
+@mixin phone-medium {
+    @media only screen and (max-width: #{$phone-medium}) {
+        @content;
+    }
+} 
+
+@mixin phone-medium-s {
+    @media only screen and (max-width: #{$phone-medium-s}) {
+        @content;
+    }
+} 
+
+@mixin phone {
+    @media only screen and (max-width: #{$phone}) {
+        @content;
+    }
+} 
+
+@mixin phone-sm {
+    @media only screen and (max-width: #{$phone-sm}) {
+        @content;
+    }
+} 
+
+@mixin phone-sm2 {
+    @media only screen and (max-width: #{$phone-sm2}) {
+        @content;
+    }
+} 
+
+@mixin phone-xsm {
+    @media only screen and (max-width: #{$phone-xsm}) {
+        @content;
+    }
+} 
+
+/** MAX-HEIGHT **/
+@mixin hphone {
+    @media only screen and (max-height: #{$hphone}) {
+        @content;
+    }
+} 
+
+
+/*----- iphone 5 wide screen -----*/
+$phone-1-width: 768px;
+$phone-1-height: 315px;
+
+@mixin phone-height {
+    @media only screen and (max-width: #{$phone-1-width}) and (max-height: #{$phone-1-height}) {
+        @content;
+    }
+}
