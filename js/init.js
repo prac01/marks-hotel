@@ -172,12 +172,11 @@ var swiper = new Swiper('.news-list', {
     slidesPerView: 3,
     spaceBetween: 10, 
 
-
     pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
-    dynamicMainBullets: 4
+    //dynamicBullets: true,
+    //dynamicMainBullets: 4
     },
     
     autoplay: {
