@@ -43,7 +43,7 @@ $(document).ready(function(){
 
   var swiper = new Swiper(".mySwiper", {
     fadeEffect: { crossFade: true },
-    virtualTranslate: true,
+    //virtualTranslate: true,
     autoplay: {
       delay: 8000,
       disableOnInteraction: false,
@@ -171,6 +171,7 @@ $(".testimonial-list").hover(function() {
 var swiper = new Swiper('.news-list', {
     slidesPerView: 3,
     spaceBetween: 10, 
+    a11y: false, /*important to prevent center click to next slide*/
 
     pagination: {
     el: '.swiper-pagination',
@@ -181,7 +182,7 @@ var swiper = new Swiper('.news-list', {
     
     autoplay: {
         delay: 4500,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
     },
     breakpoints: {
         0: {
@@ -216,6 +217,7 @@ $(".news-list").hover(function() {
 }, function() {
     (this).swiper.autoplay.start();
 });
+
 
 /* Room Swiper */
 
